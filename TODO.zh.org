@@ -1,0 +1,18 @@
+* szqzj 计划
+
+** TODO 使用 ~initramfs~ 作为根文件的启动方式
+** TODO 用作远程控制操作的openssh/telnetd
+** TODO 用于文件共享/下载的工具
+*** TODO FTP/SFTP 上传下载工具
+*** TODO HTTP CLIENT/SERVER 工具
+*** TODO SAMBA 工具
+*** TODO NFS 工具
+** TODO 用作恢复磁盘文件的工具
+** TODO 用作网络诊断测试的工具
+** TODO 用作性能测试的工具
+** TODO 用作诊断硬件的工具
+** TODO 用作文件系统格式化的工具
+** TODO 主流文件系统支持
+** TODO 无线网络支持
+   
+
