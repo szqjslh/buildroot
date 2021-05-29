@@ -1,5 +1,15 @@
 * szqzj 计划
 
+** TODO 文档支持
+** TODO 中文显示支持
+** TODO WINDOWS维护支持*** TODO Ghost 软件
+*** TODO WIM 软件
+*** TODO 引导修复/操作
+*** TODO 驱动注入
+*** TODO 问题诊断
+*** TODO Wine
+** TODO 图形界面
+可选的图形界面支持
 ** TODO 网络启动支持
 ** TODO 多种根文件系统的启动方式
 *** TODO initramfs
