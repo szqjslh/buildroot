@@ -1,21 +1,21 @@
-# Architecture
+# CPU 架构
 BR2_x86_64=y
 
 # 使用 musl c 库
 BR2_TOOLCHAIN_BUILDROOT_MUSL=y
 # musl c 库不需要多余的wchar设置
 
-# System
+# 系统
 BR2_TARGET_GENERIC_GETTY_PORT="tty1"
 BR2_ROOTFS_DEVICE_CREATION_DYNAMIC_EUDEV=y
 
-# Required tools to create bootable media
+# 用于创建可启动的镜像
 BR2_PACKAGE_HOST_GENIMAGE=y
 
-# Bootloader
+# 引导程序
 BR2_TARGET_GRUB2=y
 
-# Filesystem / image
+# 文件系统,镜像
 BR2_TARGET_ROOTFS_EXT2=y
 BR2_TARGET_ROOTFS_EXT2_4=y
 BR2_TARGET_ROOTFS_EXT2_SIZE="120M"
@@ -24,10 +24,10 @@ BR2_ROOTFS_POST_BUILD_SCRIPT="board/pc/post-build.sh"
 BR2_ROOTFS_POST_IMAGE_SCRIPT="support/scripts/genimage.sh"
 BR2_ROOTFS_POST_SCRIPT_ARGS="-c board/pc/genimage-bios.cfg"
 
-# Linux headers same as kernel, a 4.18 series
+# Linux 内核头文件应该和使用的内核相同
 BR2_PACKAGE_HOST_LINUX_HEADERS_CUSTOM_4_18=y
 
-# Kernel
+# Linux 内核
 BR2_LINUX_KERNEL=y
 BR2_LINUX_KERNEL_CUSTOM_VERSION=y
 BR2_LINUX_KERNEL_CUSTOM_VERSION_VALUE="4.18.10"
@@ -36,7 +36,7 @@ BR2_LINUX_KERNEL_CUSTOM_CONFIG_FILE="board/pc/linux.config"
 BR2_LINUX_KERNEL_INSTALL_TARGET=y
 BR2_LINUX_KERNEL_NEEDS_HOST_OPENSSL=y
 
-# Firmware
+# 内核需要的设备固件
 BR2_PACKAGE_LINUX_FIRMWARE=y
 BR2_PACKAGE_LINUX_FIRMWARE_ATHEROS_9170=y
 BR2_PACKAGE_LINUX_FIRMWARE_ATHEROS_9271=y
@@ -56,10 +56,10 @@ BR2_PACKAGE_LINUX_FIRMWARE_RTL_81XX=y
 BR2_PACKAGE_LINUX_FIRMWARE_RTL_87XX=y
 BR2_PACKAGE_LINUX_FIRMWARE_RTL_88XX=y
 
-# Packages
+# 软件包
 #
-# Use connman so that networking setup is simpler, via connmanctl tool
-# acpid is for seamless power button support
+# 使用 connman 是因为它设置网络很简单.
+# acpid 用作电源按键支持
 BR2_PACKAGE_ACPID=y
 BR2_PACKAGE_CONNMAN=y
 BR2_PACKAGE_CONNMAN_CLIENT=y
