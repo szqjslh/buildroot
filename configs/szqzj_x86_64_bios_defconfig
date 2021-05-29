@@ -17,6 +17,8 @@ BR2_SYSTEM_ENABLE_NLS=y
 # 安装 timezone 文件
 BR2_TARGET_TZ_INFO=y
 BR2_TARGET_LOCALTIME="Hongkong"
+# 合并系统文件到 /usr
+BR2_ROOTFS_MERGED_USR=y
 
 # 用于创建可启动的镜像
 BR2_PACKAGE_HOST_GENIMAGE=y
