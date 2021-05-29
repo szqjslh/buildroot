@@ -1,8 +1,9 @@
 # Architecture
 BR2_x86_64=y
 
-# Toolchain, required for eudev (to autoload drivers)
-BR2_TOOLCHAIN_BUILDROOT_WCHAR=y
+# 使用 musl c 库
+BR2_TOOLCHAIN_BUILDROOT_MUSL=y
+# musl c 库不需要多余的wchar设置
 
 # System
 BR2_TARGET_GENERIC_GETTY_PORT="tty1"
