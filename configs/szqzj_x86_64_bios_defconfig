@@ -5,6 +5,10 @@ BR2_x86_64=y
 BR2_TOOLCHAIN_BUILDROOT_MUSL=y
 # musl c 库不需要多余的wchar设置
 
+# 启用ccache用作多次构建的加速
+BR2_CCACHE=y
+BR2_CCACHE_DIR="$(TOPDIR)/dl/.buildroot-ccache"
+
 # 系统
 BR2_TARGET_GENERIC_GETTY_PORT="tty1"
 BR2_ROOTFS_DEVICE_CREATION_DYNAMIC_EUDEV=y
