@@ -5,6 +5,9 @@ BR2_x86_64=y
 BR2_TOOLCHAIN_BUILDROOT_MUSL=y
 # musl c 库不需要多余的wchar设置
 
+# 加速内核源码的下载，使用国内的镜像
+BR2_KERNEL_MIRROR="https://mirrors.ustc.edu.cn/kernel.org"
+
 # 启用ccache用作多次构建的加速
 BR2_CCACHE=y
 BR2_CCACHE_DIR="$(TOPDIR)/dl/.buildroot-ccache"
