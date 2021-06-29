@@ -319,7 +319,7 @@ if BR2_CCACHE
 
 config BR2_CCACHE_DIR
 	string "Compiler cache location"
-	default "$(HOME)/.buildroot-ccache"
+	default "$(TOPDIR)/dl/.buildroot-ccache"
 	help
 	  Where ccache should store cached files.
 	  If the Linux shell environment has defined the BR2_CCACHE_DIR
